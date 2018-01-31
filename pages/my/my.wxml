@@ -1,0 +1,49 @@
+<view class="my-container">
+  <view class='my-head'>
+    <view class='my-info'>
+      <image class='my-avatar' src='{{userInfo.avatarUrl}}'></image>
+      <text class='my-name'>{{userInfo.nickName}}</text>
+    </view>
+    <view class='about-us'>
+      <icon type='info' color='#fff' size='18'></icon>
+      <text>关于我们</text>
+    </view>
+  </view>
+  <view class='address-info'>
+    <text class='address-management' catchtap='onUpdateAddress'>地址管理 ></text>
+    <text class='name'>{{address.userName}}</text>
+    <text class='phone'>{{address.userPhone}}</text>
+    <text class='address-detail'>{{address.addressDetail}}</text>
+  </view>
+  <view class='my-order-list'>
+    <view class='list-title'>我的订单</view>
+    <view class='list-content' wx:if="{{listContent}}">
+      <block wx:for="{{resArr}}" wx:key="key">
+        <view class='order-list-item'>
+          <view class='order-number'>
+            <text>订单编号 AC{{item.randomNum}}</text>
+          </view>
+          <view class='order-content'>
+            <view class='content-img'>
+              <image src='{{item.resArr[0].img}}'></image>
+            </view>
+            <view class='content-info'>
+              <text class='con-title'>{{item.resArr[0].name}}</text>
+              <text class='con-number'>等共{{item.resArr.length}}件商品</text>
+            </view>
+            <view class='wait-arrival'>
+              <text>待收货</text>
+            </view>
+          </view>
+          <view class='confirm-receive'>
+            <text class='final-pay'>实付款： ￥{{item.totalPrice}}</text>
+            <text class='receive-button'>确认收货</text>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class='no-order' wx:else>
+      <text>暂无订单</text>
+    </view>
+  </view>
+</view>

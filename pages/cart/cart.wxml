@@ -1,0 +1,50 @@
+<view class="shopCart-container">
+  <view class="cart-empty-tip" wx:if="{{!cartFull}}">
+    <text>您还没有添加任何商品</text>
+  </view>
+  <scroll-view wx:if="{{cartFull}}" class="shopCartList" scroll-y="true">
+    <block wx:for="{{resArr}}" wx:key="key">
+      <view class='list-item'>
+        <view class="select-input">
+          <checkbox-group bindchange="selectChange" data-item='{{item}}'>
+            <checkbox checked='{{item.selected}}'/>
+          </checkbox-group>
+          <icon wx:if="{{item.selected}}" class="selectIcon" type='success' color='red' size='25'></icon>
+          <icon wx:else class="noSelectIcon" type='success' color='rgba(0,0,0,0.5)' size='25'></icon>
+        </view>
+        <view class='select-img' catchtap='onSingelTap' data-id='{{item.id}}'>
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class='select-title-opera'>
+          <text class='title'>{{item.name}}</text>
+          <view class='opera'>
+            <text class='decrease' catchtap='onDeTap' data-itemid='{{item.id}}'>-</text>
+            <text class='selected-num'>{{item.addNum}}</text>
+            <text class='add' catchtap='onAddTap' data-itemid='{{item.id}}'>+</text>
+          </view>
+        </view>
+        <view class='price-clear'>
+          <text class='total-price'>￥{{item.price}}</text>
+          <icon type='clear'catchtap="onDeleteTap" data-item='{{item}}'></icon>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view wx:if="{{cartFull}}" class='cartInfo-bar'>
+    <view class='allSelect'>
+      <checkbox-group bindchange="selectChange" data-allSelect = "allSelect">
+        <label>
+          <checkbox class="allCheckbox" checked='{{isAllSelected}}' />全选
+        </label>
+      </checkbox-group>
+      <image wx:if="{{isAllSelected}}" class="allSelectIcon" src='/image/allcheck.png'></image>
+      <image wx:else class="noAllSelectIcon" src='/image/no-allcheck.png'></image>
+    </view>
+    <navigator open-type='navigate' url='../order-detial/order-detial' hover-class="none" hover-stop-propagation="true">
+      <view class='totalPrice'>
+        <text>￥{{totalPrice}}</text>
+        <text> > </text>
+      </view>
+    </navigator>
+  </view>
+</view>

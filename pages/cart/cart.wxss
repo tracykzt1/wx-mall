@@ -1,0 +1,157 @@
+.shopCart-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-empty-tip{
+  width: 100%;
+  font-size: 32rpx;
+  color: #ccc;
+  text-align: center;
+  padding-top:80rpx; 
+}
+
+.shopCartList {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 80rpx;
+}
+
+.list-item {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx 10rpx 0;
+  box-sizing: border-box;
+}
+
+
+.list-item .select-input {
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  position: relative;
+}
+
+.list-item .select-input checkbox{
+  width: 80rpx;
+  height: 80rpx;
+  opacity: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.list-item .select-input .selectIcon,
+.list-item .select-input .noSelectIcon{
+  position: absolute;
+  top: 20rpx;
+  left: 14rpx;
+}
+
+
+
+.list-item .select-img {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.list-item .select-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.list-item .select-title-opera {
+  flex: 1;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.list-item .select-title-opera .title {
+  font-size: 32rpx;
+  color: #333;
+  letter-spacing: 6rpx;
+}
+
+.list-item .select-title-opera .opera {
+  margin-top: 40rpx;
+}
+
+.list-item .select-title-opera .opera text {
+  margin-right: 20rpx;
+}
+
+.list-item .select-title-opera .opera .decrease,
+.list-item .select-title-opera .opera .add{
+  display: inline-block;
+  width: 40rpx;
+  font-size: 40rpx;
+  text-align: center;
+  padding: 10rpx;
+}
+.list-item .select-title-opera .opera .selected-num{
+  display: inline-block;
+  width: 60rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.list-item .price-clear {
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.list-item .price-clear .total-price {
+  font-weight: bold;
+}
+
+.list-item .price-clear icon {
+  margin-top: 50rpx;
+}
+
+.cartInfo-bar {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #977773;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 32rpx;
+  display: flex;
+}
+
+.cartInfo-bar .allSelect{
+  flex: 1;
+  position: relative;
+}
+.cartInfo-bar .allSelect .allCheckbox{
+  margin-left:10rpx;
+  margin-right: 20rpx;
+  position: relative;
+  z-index: 10;
+  opacity: 0; 
+}
+
+.cartInfo-bar .allSelect .allSelectIcon,
+.cartInfo-bar .allSelect .noAllSelectIcon{
+  width: 48rpx;
+  height: 48rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 25rpx;
+}
+
+.cartInfo-bar .totalPrice{
+  margin-right: 20rpx;
+}

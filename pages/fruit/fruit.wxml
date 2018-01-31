@@ -1,0 +1,12 @@
+<import src="../template/fruit-template/fruit-template.wxml" />
+
+<view class='fruit-container'>
+  <view class='fruit-banner'>
+    <image src='/image/fruit-banner.png'></image>
+  </view>
+  <view class='fruit-list'>
+    <block wx:for="{{fruits}}" wx:key="index">
+      <template is="fruit-template" data="{{...item}}" />
+    </block>
+  </view>
+</view>

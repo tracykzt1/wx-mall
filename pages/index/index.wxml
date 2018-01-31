@@ -1,0 +1,44 @@
+<import src="../template/fruit-template/fruit-template.wxml" />
+
+<view class="index-container">
+  <!-- 轮播banner -->
+  <swiper catchtap="onSwiperTap" indicator-dots="true" autoplay="true" interval="4000" circular="true">
+    <swiper-item>
+      <image src='/image/b1.jpg' data-goodId='1'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/image/b2.jpg' data-goodId='2'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/image/b3.jpg' data-goodId='3'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 精选主题 -->
+  <view class='theme'>
+    <view class='theme-title'>
+      <text>精选主题</text>
+    </view>
+    <view class='theme-mid'>
+      <view catchtap='onFruitTap'>
+        <image class='left' src='/image/fruit-world.png'></image>
+      </view>
+      <view catchtap='onNewTap'>
+        <image class='right' src='/image/new-good.png'></image>
+      </view>
+    </view>
+    <view class='theme-bom' catchtap='onGrainsTap'>
+      <image src='/image/grains.png'></image>
+    </view>
+  </view>
+  <!-- 最近新品 -->
+  <view class='recent-product'>
+    <view class='recent-title'>
+      <text>最近新品</text>
+    </view>
+    <view class='new-list'>
+      <block wx:for="{{fruits}}" wx:key="index">
+        <template is="fruit-template" data="{{...item}}"/>
+      </block>
+    </view>
+  </view>
+</view>

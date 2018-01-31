@@ -1,0 +1,288 @@
+<view class="category-container">
+  <scroll-view class='cate-name' scroll-y="true" catchtap='onCateTap'>
+    <view data-cateId="0" class='{{cateId=="0"?"tap":""}}'>果味 </view>
+    <view data-cateId="1" class='{{cateId=="1"?"tap":""}}'>蔬菜 </view>
+    <view data-cateId="2" class='{{cateId=="2"?"tap":""}}'>炒货 </view>
+    <view data-cateId="3" class='{{cateId=="3"?"tap":""}}'>点心 </view>
+    <view data-cateId="4" class='{{cateId=="4"?"tap":""}}'>粗茶 </view>
+    <view data-cateId="5" class='{{cateId=="5"?"tap":""}}'>淡饭 </view>
+  </scroll-view>
+  <scroll-view class='cate-content' scroll-y="true" scroll-into-view="{{toView}}" scroll-with-animation="true">
+    <view id="guowei" class='cate-con-item'>
+      <view class='cate-banner'>
+        <image src='/image/new-banner.png'></image>
+      </view>
+      <view class='cate-title'>
+        <text>*果味*</text>
+      </view>
+      <view class='cate-con'>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+      </view>
+    </view>
+    <view id="sucai" class='cate-con-item'>
+      <view class='cate-banner'>
+        <image src='/image/new-banner.png'></image>
+      </view>
+      <view class='cate-title'>
+        <text>*蔬菜*</text>
+      </view>
+      <view class='cate-con'>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+      </view>
+    </view>
+    <view id="chaohuo" class='cate-con-item'>
+      <view class='cate-banner'>
+        <image src='/image/new-banner.png'></image>
+      </view>
+      <view class='cate-title'>
+        <text>*炒货*</text>
+      </view>
+      <view class='cate-con'>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>素米</text>
+        </view>
+      </view>
+    </view>
+    <view id="dianxin" class='cate-con-item'>
+      <view class='cate-banner'>
+        <image src='/image/new-banner.png'></image>
+      </view>
+      <view class='cate-title'>
+        <text>*点心*</text>
+      </view>
+      <view class='cate-con'>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s4-detail.png'></image>
+          <text>红枣</text>
+        </view>
+      </view>
+    </view>
+    <view id="chucha" class='cate-con-item'>
+      <view class='cate-banner'>
+        <image src='/image/new-banner.png'></image>
+      </view>
+      <view class='cate-title'>
+        <text>*粗茶*</text>
+      </view>
+      <view class='cate-con'>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s6-detail.png'></image>
+          <text>芹菜</text>
+        </view>
+      </view>
+    </view>
+    <view id="danfan" class='cate-con-item'>
+      <view class='cate-banner'>
+        <image src='/image/new-banner.png'></image>
+      </view>
+      <view class='cate-title'>
+        <text>*淡饭*</text>
+      </view>
+      <view class='cate-con'>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+        <view class='cate-item'>
+          <image src='/image/s5-detail.png'></image>
+          <text>红枣</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

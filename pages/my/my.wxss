@@ -1,0 +1,162 @@
+page{
+  height: 100%;
+  background-color: #ECECEC;
+}
+
+.my-head {
+  width: 100%;
+  height: 160rpx;
+  line-height: 160rpx;
+  background-color: #777;
+  font-size: 24rpx;
+  color: #fff;
+  display: flex;
+}
+
+.my-head .my-info {
+  flex: 1;
+  display: inline-flex;
+  height: 100%;
+}
+
+.my-head .my-info .my-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 30rpx 20rpx 0 ;
+}
+
+.my-head .about-us {
+  width: 240rpx;
+  height: 100%;
+}
+
+.my-head .about-us icon {
+  margin: 0 20rpx 0 50rpx;
+  vertical-align: -10rpx;
+}
+
+.address-info{
+  width: 100%;
+  font-size: 32rpx;
+  color: #666;
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.address-info .address-management{
+  text-align: center;
+}
+
+.address-info text{
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: 1px solid #ccc;
+  padding: 0 20rpx;
+}
+
+.address-info text:nth-child(4n){
+  border: none;
+}
+
+.my-order-list{
+  width: 100%;
+}
+
+.my-order-list .list-title{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #666;
+  text-align: center;
+  border-bottom: 1px solid #666;
+  background-color: #fff;
+}
+
+.my-order-list .list-content .order-list-item{
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.my-order-list .no-order{
+  padding-top: 100rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.order-list-item .order-number{
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: #666;
+  border-bottom: 1px solid #ccc;
+}
+
+.order-list-item .order-content{
+  display: flex;
+  flex-direction: row;
+  height: 200rpx;
+  border-bottom: 1px solid #ccc;
+  padding-top: 60rpx;
+  box-sizing: border-box;
+}
+
+.order-list-item .order-content .content-img{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 40rpx;
+}
+
+.order-list-item .order-content .content-img image{
+  width: 100%;
+  height: 100%;
+}
+
+.order-list-item .order-content .content-info{
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 32rpx;
+}
+
+.order-list-item .order-content .content-info text{
+  margin-bottom: 20rpx;
+}
+
+.order-list-item .order-content  .wait-arrival{
+  width: 120rpx;
+  color: red;
+  font-size:32rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.order-list-item .confirm-receive{
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 32rpx;
+}
+
+.order-list-item .confirm-receive .final-pay{
+  float: left;
+  color: #000;
+  font-weight: bold;
+}
+.order-list-item .confirm-receive .receive-button{
+  width: 140rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: red;
+  color: #fff;
+  font-size: 32rpx;
+  text-align: center;
+  float: right;
+  margin-right: 10rpx;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+}

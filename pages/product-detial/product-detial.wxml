@@ -1,0 +1,52 @@
+<view class='detail-container'>
+  <view class='detail-head'>
+    <view class='detail-img'>
+      <image src='{{goodItem.img}}' mode='aspectFit'></image>
+    </view>
+    <view class='detail-bar'>
+      <view class='add-num'>
+        <text class='add-opera'>数量</text>
+        <text class='add-opera'>{{numarr[index]}}</text>
+        <picker class='add-opera' bindchange="bindPickerChange" range="{{numarr}}">
+          <text>+</text>
+        </picker>
+      </view>
+      <view class='line'></view>
+      <view class='add-cart' catchtap='onAddTap'>
+        <text>加入购物车</text>
+        <image src='/image/car-on.png'></image>
+      </view>
+    </view>
+    <view class='detail-txt'>
+      <text class='have'>{{goodItem.stock}}</text>
+      <text class='detail-name'>{{goodItem.name}}</text>
+      <text class='detail-price'>￥{{goodItem.price}}</text>
+    </view>
+    <navigator url="../cart/cart" open-type='switchTab'  hover-stop-propagation="true" >
+      <view class="cart {{onscale==true?'onscale':''}}">
+        <image src='/image/car.png'></image>
+        <text class='cartNum' wx:if="{{isShowNum}}">{{totalNum}}</text>
+      </view>
+    </navigator>
+    <image src='/image/car-on.png' class="to-carts-icon {{ontap==true?'ontap':''}}"></image>
+  </view>
+  <view class='bar'></view>
+  <view class='detail-content'>
+    <view class='menu-bar' catchtap='ontabTap'>
+      <view class='proDetail {{curTapIdx == "1"?"tap":""}}' data-id='1'>商品详情</view>
+      <view class='proData {{curTapIdx == "2"?"tap":""}}' data-id='2'>产品参数</view>
+      <view class='proServer {{curTapIdx == "3"?"tap":""}}' data-id='3'>售后服务</view>
+    </view>
+    <view class='main-con'>
+      <view wx:if="{{curTapIdx == '1'}}">
+        <text>详情详情详情</text>
+      </view>
+      <view wx:elif="{{curTapIdx == '2'}}">
+        <text>参数参数参数</text>
+      </view>
+      <view wx:else>
+        <text>售后服务售后服务售后服务</text>
+      </view>
+    </view>
+  </view>
+</view>

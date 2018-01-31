@@ -1,0 +1,41 @@
+<view class="order-detial-container">
+  <view class='address'>
+    <view wx:if="{{addAddress}}" class='add-address' catchtap='onAddAddress'>
+      <text>+ 请添加地址</text>
+    </view>
+    <view wx:else class='has-address'catchtap='onUpdateAddress'>
+      <view class='user-phone'>
+        <text>收货人：{{address.userName}}</text>
+        <text>电话： {{address.userPhone}}</text>
+      </view>
+      <view class='address-info'>
+        <text>{{address.addressDetail}}</text>
+      </view>
+      <text class='arrow'>></text>
+    </view>
+  </view>
+  <scroll-view class='order-list' scroll-y="true">
+  <block wx:for="{{resArr}}" wx:key="key">
+    <view class='order-item'>
+      <view class='order-img' catchtap='onSingelTap' data-id='{{item.id}}'>
+        <image src='{{item.img}}'></image>
+      </view>
+      <view class='order-info'>
+        <text class='order-name '>{{item.name}}</text>
+        <text class='order-price '>￥{{item.price}}</text>
+      </view>
+      <view class='order-num'>
+        <text>×{{item.addNum}}</text>
+      </view>
+    </view>
+  </block>
+  </scroll-view>
+  <view class='pay '>
+    <view class='pay-num '>
+      <text>付款合计：￥{{totalPrice}}</text>
+    </view>
+    <view class='to-pay ' catchtap='onToPayTap'>
+      <text>去付款</text>
+    </view>
+  </view>
+</view>

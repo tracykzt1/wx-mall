@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/my/my",
+    "pages/fruit/fruit",
+    "pages/NewProduct/NewProduct",
+    "pages/grains/grains",
+    "pages/product-detial/product-detial" ,
+    "pages/order-detial/order-detial",
+    "pages/address/address"   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#C5BFAC",
+    "navigationBarTitleText": "零食屋",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "image/home.png",
+      "selectedIconPath": "image/home-tap.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "image/category.png",
+        "selectedIconPath": "image/category-tap.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "image/shop.png",
+        "selectedIconPath": "image/shop-tap.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "image/my.png",
+        "selectedIconPath": "image/my-tap.png"
+      }
+    ],
+    "color": "#333",
+    "selectedColor": "#25C88A"
+  }
+}

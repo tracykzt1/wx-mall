@@ -1,0 +1,75 @@
+@import "../template/fruit-template/fruit-template.wxss";
+
+page {
+  height: 100%;
+  background-color: #fff;
+}
+
+swiper {
+  width: 100%;
+  height: 421rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 421rpx;
+}
+
+.theme {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.theme .theme-title {
+  width: 100%;
+  height: 40rpx;
+  padding: 30rpx 0;
+  color: #ab956d;
+  text-align: center;
+}
+
+.theme .theme-mid {
+  display: flex;
+  flex-direction: row;
+}
+
+.theme .theme-mid image {
+  width: 375rpx;
+  height: 375rpx;
+}
+
+.theme .theme-bom {
+  width: 100%;
+  height: 375rpx;
+}
+
+.theme .theme-bom image {
+  width: 100%;
+  height: 100%;
+}
+
+.recent-product {
+  padding: 0 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-product .recent-title {
+  width: 100%;
+  height: 40rpx;
+  padding: 30rpx 0;
+  color: #ab956d;
+  text-align: center;
+}
+
+.recent-product .new-list {
+  font-size: 32rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+

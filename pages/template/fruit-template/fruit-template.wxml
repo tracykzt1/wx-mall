@@ -1,0 +1,9 @@
+<template name="fruit-template">
+  <view class='product' catchtap='onProductTap' data-proId='{{id}}'>
+    <image src='{{img}}'></image>
+    <view class='name-price'>
+      <text>{{name}}</text>
+      <text>￥{{price}}</text>
+    </view>
+  </view>
+</template>
